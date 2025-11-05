@@ -11,8 +11,8 @@ int main() {
 
     printf("Enter a sentence: ");
     fgets(str, sizeof(str), stdin);
-
     str[strcspn(str, "\n")] = '\0';
+    
     printf("You entered: %s\n", str);
 
     //copying string using strcpy

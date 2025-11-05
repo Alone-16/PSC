@@ -2,7 +2,7 @@
 
 int main () {
 
-    //changing uppercase to lowercase
+    //changing uppercase to lowercase and lowercase to uppercase
 
     char str[10];
     char nstr[10];
