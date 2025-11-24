@@ -1,0 +1,21 @@
+for showing the preprocessed output (and where headers are included)
+gcc -E file_name.c -o file_name.i
+# to show include search paths (verbose):
+gcc -v -E file_name.c
+
+for producing assembly code from C source
+gcc -S file_name.c -o file_name.s
+
+for producing an object file (compile only)
+gcc -c file_name.c -o file_name.o
+# or assemble a .s file to an object file:
+gcc -c file_name.s -o file_name.o
+
+for linking object files into an executable
+gcc file_name.o -o executable_name
+# compile and link in one step:
+gcc file_name.c -o executable_name
+
+# Notes:
+# - Use consistent filenames (case-sensitive on some systems).
+# - The `-o` option sets the output filename.
